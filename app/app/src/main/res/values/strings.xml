@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appGateauDamour</string>
+    <string name="lblListaRS">R$:</string>
+    <string name="lblTituloLogin">Login</string>
+    <string name="lblTelaEmail">Email:</string>
+    <string name="lblTelaSenha">Senha:</string>
+    <string name="btnLogin">Logar</string>
+</resources>

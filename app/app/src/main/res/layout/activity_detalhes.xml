@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".detalhesActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logoicon" />
+
+            <Space
+                android:layout_width="146dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnVoltarDetalhes"
+                android:layout_width="126dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_voltar" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <ImageView
+        android:id="@+id/imgDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:srcCompat="@drawable/sem_img" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="364dp"
+            android:layout_height="102dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/lblNomeProd"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="TextView"
+                android:textColor="@color/titulos"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/lblPrecoProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="15sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/estrela_nao" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/estrela_nao" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/estrela_nao" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/estrela_nao" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/estrela_nao" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

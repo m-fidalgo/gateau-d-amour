@@ -1,0 +1,341 @@
+	
+	/* fontes */
+	@font-face{
+		font-family:"amatic sc";
+	    src: url("fontes/AmaticSC-Bold.ttf");
+	}
+	
+	@font-face {
+	font-family:"c-&-l";
+	src: url("fontes/Champagne & Limousines Bold.ttf");
+    }
+	
+	
+	/* geral */
+	body{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		font-family:"c-&-l";
+	}
+	
+	#conteudo{
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 50px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+	}
+	
+	h1, h2 {
+		color: #FFC3D0;
+		font-family: "amatic sc";
+	}
+	
+    .h1M{
+        color: #FFC3D0;
+		font-family: "amatic sc";
+        font-size: 30pt;
+    }
+
+	.btn{
+		background-color: #FFC3D0;
+		color: #4D2100;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		font-family: "amatic sc";
+		font-size: 17pt;
+		padding: 10px;
+		width: 100px;
+	}
+
+    .btnFU {
+        background-color: #FFC3D0;
+        color: #4D2100;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-family: "amatic sc";
+        font-size: 17pt;
+        padding: 10px;
+        width: 200px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .txt {
+        width: 50%;
+        border: 0.5px solid #4D2100;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 5px;
+        outline: none;
+        font-family: "c-&-l";
+    }   
+
+    .txt:focus{
+		border: 0.8px solid #FFC3D0;
+    }
+
+    .divProg {
+        text-align: center;
+    }
+
+    .links{
+        text-decoration: none;
+        color: #4D2100;
+    }
+
+    .link {
+        background-color: #FFC3D0;
+        color: #4D2100;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-family: "amatic sc";
+        font-size: 13pt;
+        padding: 10px;
+        width: 100px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .rfv{
+        font-size: 9pt;
+    }
+
+    .gv{
+        width: 100%;
+    }
+
+    .ddl {
+        width: 50%;
+        border: 0.5px solid #4D2100;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 5px;
+        outline: none;
+        font-family: "c-&-l";
+    }
+
+    .ddl:focus {
+        border: 0.8px solid #FFC3D0;
+    }
+
+    .imgProd {
+        height: 100px;
+    }
+
+    .dlProd {
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .dlReceitas {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-left: 20%;
+        margin-right: 20%;     
+    }
+
+	/* topo + menus */
+	#topo{
+		margin-left: 5%;
+		margin-right: 5%;
+		height: 100px;
+		border-bottom: 2px solid #4D2100;
+	}
+	
+	#logo{
+		width: 30%;
+		float: left;
+	}
+	
+	#logo img{
+		height: 50px;		
+		margin-top: 30px;
+	}
+	
+	#logo #logoTexto{
+		margin-left: 10px;
+	}
+	
+	#logo a{
+		text-decoration: none;
+	}
+	
+	#menu {
+		width: 65%;
+		float: right;
+		top: 0;
+	}
+	
+	nav {
+		font-family: "amatic sc";
+		text-align: right;
+	}
+	
+	.dropdownMenu {
+		margin-top: 20px;
+		margin-left: 0px;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.btnMenu {
+		margin-left: 25px;
+		padding: 0px;
+		background-color: white;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		color: #4D2100;
+		font-family: "amatic sc";
+		font-size: 17pt;
+	}
+
+	.btnMenu img {
+		height: 30px;
+	}
+	
+	.setaBaixo:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 8px;
+		width: 0; 
+		height: 0; 
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #4D2100;
+	}
+	
+	.contMenuDrop {
+		display: none;
+		position: absolute;
+		min-width: 100%;
+		line-height: 30px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		background-color: white;
+		padding: 5px;
+		text-align: left;
+	}
+	
+	.contMenuDrop a {
+		display: block;
+		color: #4D2100;
+		text-decoration: none;
+		font-family: "c-&-l";
+	}
+	
+	.dropdownMenu:hover .contMenuDrop {
+		display: block;
+	}
+	
+	.dropdownMenu:hover .btnMenu {
+		color: #FFC3D0;
+	}
+	
+	.contMenuDrop a:hover {
+		color: #FFC3D0;
+	}
+	
+    .dropBtn{
+        padding: 0px;
+	    background-color: white;
+	    border: none;
+	    cursor: pointer;
+		outline: none;
+	    color: #4D2100;
+	    font-family: "c-&-l";
+	    font-size: 17px;
+    }
+
+    .dropContent{
+        display: none;
+	    position: absolute;
+	    min-width: 100%;
+	    line-height: 30px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    background-color: white;
+	    padding: 5px;
+	    margin-left: 56%;
+	    margin-top: -15%;
+    }
+
+    .dropContent a{
+		display: block;
+		color: #4D2100;
+		text-decoration: none;
+		font-family: "c-&-l";
+
+    }
+
+    .dropCont:hover .dropContent {
+        display: block;
+    }
+
+    .dropContent a:hover {
+	    color: #FFC3D0;
+    }
+
+    .dropContent1 {
+	    display: none;
+	    position: absolute;
+	    min-width: 100%;
+	    line-height: 30px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    background-color: white;
+	    padding: 5px;
+	    margin-left: 56%;
+	    margin-top: -15%;
+    }
+
+    .dropContent1 a{
+		display: block;
+		color: #4D2100;
+		text-decoration: none;
+		font-family: "c-&-l";
+
+    }
+
+    .dropCont:hover .dropContent1 {
+        display: block;
+    }
+
+    .dropContent1 a:hover {
+	    color: #FFC3D0;
+    }
+
+
+    /* rodapé */
+	#footer{
+		height: 50px;
+		width: 100%;
+		background-color: #FFC3D0;
+		color: #4D2100;
+		bottom: 0;
+		position: fixed;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.setaCima:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 8px;
+		width: 0; 
+		height: 0; 
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid #4D2100;
+	}
+	
+    .linkFooter{
+        text-decoration: none;
+    }

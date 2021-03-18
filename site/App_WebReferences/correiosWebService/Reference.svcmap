@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1c27fd01-b553-4c0d-8d8c-dcc4f9a810bf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://redirect.viglink.com/?format=go&amp;jsonp=vglnk_152687442135116&amp;key=ca8b3984fdf6c76dc2fe3325feb58eba&amp;libId=jhfpls5y0102e3ju000DAejsdx15c&amp;loc=http%3A%2F%2Fwww.eduardorizo.com.br%2F2014%2F12%2F04%2Fcorreios-webservice-para-consulta-de-enderecos-a-partir-de-um-cep%2F&amp;v=1&amp;out=https%3A%2F%2Fapps.correios.com.br%2FSigepMasterJPA%2FAtendeClienteService%2FAtendeCliente%3Fwsdl&amp;ref=https%3A%2F%2Fwww.google.com.br%2F&amp;title=Correios%3A%20Webservice%20para%20consulta%20de%20endere%C3%A7os%20a%20partir%20de%20um%20CEP%20%E2%80%93%20Blog%20do%20Eduardo%20H.%20Rizo&amp;txt=https%3A%2F%2Fapps.correios.com.br%2FSigepMasterJPA%2FAtendeClienteService%2FAtendeCliente%3Fwsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AtendeClienteService.wsdl" MetadataType="Wsdl" ID="7b8f0f6f-f85f-4daf-94a9-e4e78cbaf3c8" SourceId="1" SourceUrl="https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

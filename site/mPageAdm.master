@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/cs/mPageAdm.master.cs" Inherits="mPageAdm" %>
+
+<!DOCTYPE html>
+<html>
+  <head runat="server">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<title>Gâteau d'Amour</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="stylesheet" type="text/css" href="css/menuResp1.css" />
+	<link rel="stylesheet" type="text/css" href="css/siteResp.css" />
+	<link rel="shortcut icon" href="imgs/icons/favicon.ico" type="image/x-icon" />
+	
+	<script src="js/modernizr.custom.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  </head>
+  
+  <body>
+    <div id="topo">
+	  <a id="topo"></a>
+	  <div id="logo">
+	    <a href="index.aspx"><img title="Home" src="imgs/icons/logoIcon.png" /><img title="Home" id="logoTexto" src="imgs/icons/logoTexto.png" /></a>
+	  </div>
+	  
+	  <div id="menu">
+      <!-- menu dropdown -->
+	  <nav>
+	    <div class="dropdownMenu">
+		  <button class="btnMenu"> <img src="imgs/icons/bolo.png" />   Bolos  <span class="setaBaixo"></span></button>
+		  <div class="contMenuDrop">
+			<div class="dropCont" id="dropCont">
+			<a href="cadastrarBolos.aspx"> Cadastrar</a>
+			<a href="alt_excBolos.aspx"> Alterar/Excluir</a>						
+		    </div> 		
+		  </div>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu"> <img src="imgs/icons/cupcake.png" />   Cupcakes  <span class="setaBaixo"></span></button>
+		  <div class="contMenuDrop">
+			<div class="dropCont" id="dropCont">
+			<a href="cadastrarCupcakes.aspx"> Cadastrar</a>
+			<a href="alt_excCupcakes.aspx"> Alterar/Excluir</a>						
+		    </div> 		
+		  </div>
+		</div>
+        <div class="dropdownMenu">
+		  <button class="btnMenu"> <img src="imgs/icons/outros.png" />   Outros  <span class="setaBaixo"></span></button>
+		  <div class="contMenuDrop">
+			<div class="dropCont" id="dropCont">
+                <button class="dropBtn"> Cadastrar > </button>					
+				 <div class="dropContent">
+					<a href="cadastrarFormato.aspx" class="links">Formato</a> 
+					<a href="cadastrarTamanho.aspx" class="links">Tamanho</a>
+					<a href="cadastrarGenero.aspx" class="links">Gênero</a>
+					<a href="cadastrarCor.aspx" class="links">Cor</a>
+					<a href="cadastrarSabor.aspx" class="links">Sabor</a> 
+					<a href="cadastrarCobertura.aspx" class="links">Cobertura</a> 
+					<a href="cadastrarMassa.aspx" class="links">Massa</a> 
+					<a href="cadastrarRecheio.aspx" class="links">Recheio</a>
+					<a href="cadastrarDecor.aspx" class="links">Decoração</a> 
+					<a href="cadastrarPag.aspx" class="links">Pagamento</a> 							
+				 </div>
+		    </div> 
+            <div class="dropCont" id="dropCont">
+                <button class="dropBtn"> Alterar > </button>					
+				 <div class="dropContent1">
+					<a href="alt_excFormato.aspx" class="links">Formato</a> 
+					<a href="alt_excTamanho.aspx" class="links">Tamanho</a>
+					<a href="alt_excGenero.aspx" class="links">Gênero</a>
+					<a href="alt_excCor.aspx" class="links">Cor</a>
+					<a href="alt_excSabor.aspx" class="links">Sabor</a> 
+					<a href="alt_excCobertura.aspx" class="links">Cobertura</a> 
+					<a href="alt_excMassa.aspx" class="links">Massa</a> 
+					<a href="alt_excRecheio.aspx" class="links">Recheio</a>
+					<a href="alt_excDecor.aspx" class="links">Decoração</a> 
+					<a href="alt_excPag.aspx" class="links">Pagamento</a> 					
+				 </div>
+
+            </div>		
+		  </div>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu" onclick="window.location.href='pedidos.aspx'"> <img src="imgs/icons/pedidos.png" />   Pedidos </button>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu" onclick="window.location.href='user.aspx'"> <img src="imgs/icons/user.png" />   Usuário </button>
+		</div>
+	  </nav>
+	  <!-- fim menu dropdown -->
+		
+	  <!--menu responsivo-->
+	  <div id="dl-menu" class="dl-menuwrapper">
+	      <button class="dl-trigger">    </button>
+		  <ul class="dl-menu">
+	        <li>
+			  <a>Bolos</a>
+			  <ul class="dl-submenu">
+			    <li><a href="cadastrarBolos.aspx"> Cadastrar</a></li>
+			    <li><a href="alt_excBolos.aspx"> Alterar/Excluir</a></li>
+		      </ul>				
+			</li>
+            <li>
+			  <a>Cupcakes</a>
+			  <ul class="dl-submenu">
+			    <li><a href="cadastrarCupcakes.aspx"> Cadastrar</a></li>
+			    <li><a href="alt_excCupcakes.aspx"> Alterar/Excluir</a></li>
+		      </ul>				
+			</li>
+			<li>
+			  <a>Outros</a>
+			  	<ul class="dl-submenu">
+				  <li>
+					<a>Cadastrar</a>
+					  <ul class="dl-submenu">
+						<li><a href="cadastrarFormato.aspx" class="links">Formato</a></li>
+						<li><a href="cadastrarTamanho.aspx" class="links">Tamanho</a></li>
+						<li><a href="cadastrarGenero.aspx" class="links">Gênero</a></li>
+						<li><a href="cadastrarCor.aspx" class="links">Cor</a></li>
+						<li><a href="cadastrarSabor.aspx" class="links">Sabor</a></li>
+						<li><a href="cadastrarCobertura.aspx" class="links">Cobertura</a></li> 
+						<li><a href="cadastrarMassa.aspx" class="links">Massa</a></li>
+						<li><a href="cadastrarRecheio.aspx" class="links">Recheio</a></li>
+						<li><a href="cadastrarDecor.aspx" class="links">Decoração</a></li> 
+						<li><a href="cadastrarPag.aspx" class="links">Forma de Pagamento</a></li>						
+					  </ul>
+				  </li>
+				  <li>
+					<a>Alterar</a>
+					  <ul class="dl-submenu">
+						<li><a href="alt_excFormato.aspx" class="links">Formato</a></li>
+						<li><a href="alt_excTamanho.aspx" class="links">Tamanho</a></li>
+						<li><a href="alt_excGenero.aspx" class="links">Gênero</a></li>
+						<li><a href="alt_excCor.aspx" class="links">Cor</a></li>
+						<li><a href="alt_excSabor.aspx" class="links">Sabor</a></li>
+						<li><a href="alt_excCobertura.aspx" class="links">Cobertura</a></li> 
+						<li><a href="alt_excMassa.aspx" class="links">Massa</a></li>
+						<li><a href="alt_excRecheio.aspx" class="links">Recheio</a></li>
+						<li><a href="alt_excDecor.aspx" class="links">Decoração</a></li>
+						<li><a href="alt_excPag.aspx" class="links">Forma de Pagamento</a></li>
+					  </ul>
+				  </li>	
+				</ul>		
+			</li>
+			<li>
+			  <a href="pedidos.aspx">Pedidos</a>		
+			</li>
+            <li>
+			  <a href="user.aspx">Usuário</a>		
+			</li>			
+		  </ul>
+      </div>
+	  <!--fim menu responsivo-->
+	  </div>
+	</div>
+	
+	<div id="conteudo">
+	  <form id="form1" runat="server">
+      <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      </div>
+      </form>
+	</div>
+	
+	<div id="footer">
+      <div style="float: left; width: 10%">
+	    <p><a href="#topo"><span class="setaCima"></span></a></p>
+	  </div>
+	  <div style="display: inline-block; float: right; width: 70%; text-align: right; padding-right: 50px;">
+	    <p>
+   	      <a class="linkFooter" href="index.aspx#email"><img src="imgs/icons/email.png" style="height: 20px" title="gateau.d.amour.tcc@outlook.com" /></a>
+		  <a class="linkFooter" href="http://www.facebook.com/G%C3%A2teau-D-Amour-247416255851051/"><img src="imgs/icons/facebook.png" style="height: 20px" title="Gâteau d'Amour" /></a>
+		  <a class="linkFooter" href="http://www.instagram.com/gateau.d.amour.tcc"><img src="imgs/icons/instagram.png" style="height: 20px" title="@gateaudamour" /></a>
+		  <a class="linkFooter" href="http://www.pin.it/j6dilg2krzbt3c"><img src="imgs/icons/pinterest.png" style="height: 20px" title="@gateaudamour" /></a>
+		</p>
+	  </div>
+	</div>
+	
+	<!-- scripts menu responsivo -->
+	<script src="js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu({
+				animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+			});
+		});
+    </script>
+  </body>
+</html>

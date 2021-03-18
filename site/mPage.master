@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/cs/mPage.master.cs" Inherits="mPage" %>
+
+<!DOCTYPE html>
+<html>
+  <head runat="server">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<title>Gâteau d'Amour</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="stylesheet" type="text/css" href="css/menuResp.css" />
+	<link rel="stylesheet" type="text/css" href="css/siteResp.css" />
+	<link rel="shortcut icon" href="imgs/icons/favicon.ico" type="image/x-icon" />
+	
+	<script src="js/modernizr.custom.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+  </head>
+  
+  <body>
+    <div id="topo">
+	  <a id="topo"></a>
+	  <div id="logo">
+	    <a href="index.aspx"><img title="Home" src="imgs/icons/logoIcon.png" /><img title="Home" id="logoTexto" src="imgs/icons/logoTexto.png" /></a>
+	  </div>
+	  
+	  <div id="menu">
+      <!-- menu dropdown -->
+	  <nav>
+	    <div class="dropdownMenu">
+		  <button class="btnMenu"> <img src="imgs/icons/bolo.png" />   Bolos  <span class="setaBaixo"></span></button>
+		  <div class="contMenuDrop">
+			<div class="dropCont" id="dropCont">
+			<a href="bolosProntos.aspx"> Prontos</a>
+			<a href="montarBolos.aspx"> Montar</a>						
+		    </div> 		
+		  </div>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu"> <img src="imgs/icons/cupcake.png" />   Cupcakes  <span class="setaBaixo"></span></button>
+		  <div class="contMenuDrop">
+			<div class="dropCont" id="dropCont">
+			<a href="cupcakesProntos.aspx"> Prontos</a>
+			<a href="montarCupcakes.aspx"> Montar</a>						
+		    </div> 		
+		  </div>
+		</div>
+        <div class="dropdownMenu">
+		  <button class="btnMenu" onclick="window.location.href='receitas.aspx'"> <img src="imgs/icons/receitas.png" />   Receitas </button>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu" onclick="window.location.href='user.aspx'"> <img src="imgs/icons/user.png" />   Usuário </button>
+		</div>
+		<div class="dropdownMenu">
+		  <button class="btnMenu" onclick="window.location.href='carrinho.aspx'"> <img src="imgs/icons/carrinho.png" /></button>
+		</div>
+	  </nav>
+	  <!-- fim menu dropdown -->
+		
+	  <!--menu responsivo-->
+	  <div id="dl-menu" class="dl-menuwrapper">
+	      <button class="dl-trigger">    </button>
+		  <ul class="dl-menu">
+	        <li>
+			  <a>Bolos</a>
+			  <ul class="dl-submenu">
+			    <li><a href="bolosProntos.aspx">Prontos</a></li>
+				<li><a href="montarBolos.aspx">Montar</a></li>
+		      </ul>				
+			</li>
+            <li>
+			  <a>Cupcakes</a>
+			  <ul class="dl-submenu">
+			    <li><a href="cupcakesProntos.aspx">Prontos</a></li>
+				<li><a href="montarCupcakes.aspx">Montar</a></li>
+		      </ul>				
+			</li>
+            <li>
+			  <a href="receitas.aspx">Receitas</a>		
+			</li>
+            <li>
+			  <a href="user.aspx">Usuário</a>		
+			</li>
+            <li>
+			  <a href="carrinho.aspx">Carrinho</a>		
+			</li>			
+		  </ul>
+      </div>
+	  <!--fim menu responsivo-->
+	  </div>	  
+	</div>
+	
+	<div id="conteudo">
+	   <form id="form1" runat="server">
+       <div>
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+       </asp:ContentPlaceHolder>
+       </div>
+       </form>
+	</div>
+	
+	<div id="footer">
+      <div style="float: left; width: 10%">
+	    <p><a href="#topo"><span class="setaCima"></span></a></p>
+	  </div>
+	  <div style="display: inline-block; float: right; width: 70%; text-align: right; padding-right: 50px;">
+	    <p>
+   	      <a class="linkFooter" href="index.aspx#email"><img src="imgs/icons/email.png" style="height: 20px" title="gateau.d.amour.tcc@outlook.com" /></a>
+		  <a class="linkFooter" href="http://www.facebook.com/G%C3%A2teau-D-Amour-247416255851051/"><img src="imgs/icons/facebook.png" style="height: 20px" title="Gâteau d'Amour" /></a>
+		  <a class="linkFooter" href="http://www.instagram.com/gateau.d.amour.tcc"><img src="imgs/icons/instagram.png" style="height: 20px" title="@gateaudamour" /></a>
+		  <a class="linkFooter" href="http://www.pin.it/j6dilg2krzbt3c"><img src="imgs/icons/pinterest.png" style="height: 20px" title="@gateaudamour" /></a>
+		</p>
+	  </div>
+	</div>
+	
+	<!-- scripts menu responsivo -->
+	<script src="js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu({
+				animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+			});
+		});
+    </script>
+  </body>
+</html>

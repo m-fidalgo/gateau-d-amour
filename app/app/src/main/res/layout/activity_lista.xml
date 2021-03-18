@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".listaActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/logoicon" />
+
+            <Space
+                android:layout_width="146dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnVoltarLista"
+                android:layout_width="126dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn_voltar" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <ListView
+        android:id="@+id/lstProd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
