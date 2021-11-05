@@ -5,14 +5,14 @@
 <p>Gâteau d'Amour é uma confeitaria que permite ao usuário pedir bolos e cupcakes online</p>
 
 <h3>Funcionalidades: Usuário</h3>
-<li>:heavy_check_mark: Cadastro, login e logout</li>
-<li>:heavy_check_mark: Comprar bolos/cupcakes prontos</li>
-<li>:heavy_check_mark: Montar seu próprio bolo/cupcake</li>
+<p>:heavy_check_mark: Cadastro, login e logout</p>
+<p>:heavy_check_mark: Comprar bolos/cupcakes prontos</p>
+<p>:heavy_check_mark: Montar seu próprio bolo/cupcake</p>
 
 <h3>Funcionalidades: Administrador</h3>
-<li>:heavy_check_mark: Cadastrar, alterar e excluir itens que compõem um bolo/cupcake</li>
-<li>:heavy_check_mark: Cadastrar, alterar e excluir bolos/cupcakes prontos</li>
-<li>:heavy_check_mark: Cadastrar novos administradores</li>
+<p>:heavy_check_mark: Cadastrar, alterar e excluir itens que compõem um bolo/cupcake</p>
+<p>:heavy_check_mark: Cadastrar, alterar e excluir bolos/cupcakes prontos</p>
+<p>:heavy_check_mark: Cadastrar novos administradores</p>
 
 <h3>Tecnologias e Ferramentas</h3>
 <li>ASP.NET</li>
